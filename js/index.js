@@ -32,7 +32,7 @@
         configJson) {
         $(document).ready(function () {
 
-            //Get globals from config
+            //Get globals from config 
             var config = JSON.parse(configJson);
             var leaderboardUrl = config.leaderboardFS;
             var gameContentUrl = config.gameFS;

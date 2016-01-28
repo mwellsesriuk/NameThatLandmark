@@ -1,0 +1,8 @@
+{
+  "gameFS": "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/ScratchMapWorldLandmarks/FeatureServer/0",
+  "leaderboardFS": "http://services.arcgis.com/Qo2anKIAMzIEkIJB/arcgis/rest/services/ScratchMapLandmarkLeaderboard/FeatureServer/0",
+  "answerField": "Name",
+  "objectField": "OBJECTID",
+  "timeLeft": "50",
+  "rounds": "5"
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+   <head>
+      <title>Name that Landmark</title>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <link rel="stylesheet" href="//js.arcgis.com/3.13/esri/css/esri.css">
+      <link rel="stylesheet" type="text/css" href="css/game.css" />
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+      <script>
+          var dojoConfig = {
+              async: true,
+              paths: {
+                  "app": location.pathname.replace(/\/[^/]+$/, "") + "/js",
+              }
+          };
+      </script>
+      <script src="//js.arcgis.com/3.13/"></script>
+      <script src="js/index.js"></script>
+   </head>
+   <body>
+      <div id="background-wrap">
+         <div class="x1">
+            <div class="cloud"></div>
+         </div>
+         <div class="x2">
+            <div class="cloud"></div>
+         </div>
+         <div class="x3">
+            <div class="cloud"></div>
+         </div>
+         <div class="x4">
+            <div class="cloud"></div>
+         </div>
+         <div class="x5">
+            <div class="cloud"></div>
+         </div>
+         <div class="x6">
+            <div class="balloon"></div>
+         </div>
+      </div>
+      <div id="container">
+         <div id="logo"><img src="images/logo.png" alt="" /></div>
+         <div id="esriuklogo"><img id="esriuklogoimg" src="images/esriuklogo.png" alt="" /></div>
+         <div class="content-below">
+            <div class="reveal">
+               <p>Why not have a look around?!</p>
+               <button id="next" type="button" class="btn">Next</button>
+            </div>
+            <div class="answer-panel" id="answer-panel">
+               <p id="points">Answer correctly to receive max points</p>
+               <div class="answer">
+                  <input type="text" id="answer" name="answer" maxlength="255" autocomplete="off">
+                  <button id="submit" type="button" class="btn green">Submit</button>
+                  <button id="skip" type="button" class="btn light-blue">Reveal</button>
+               </div>
+            </div>
+            <div id="submission">
+               <p id="submission-text">Enter your name to submit your score: </p>
+               <input type="text" id="name" name="name" maxlength="255"></input>
+               <button id="submit-score" type="button" class="btn green">Submit</button>
+               <button id="restart" type="button" class="btn light-blue">Play again</button>
+            </div>
+         </div>
+         <div id="rounds-remain">1</div>
+         <div id="countdown"></div>
+         <div id="status"></div>
+         <div id="overview-map-container">
+            <div id="overview-map"></div>
+         </div>
+         <div id="pad">
+            <div class="box">
+               <div class="content" id="map"></div>
+               <div class="mask">
+                  <canvas id="j-cvs"></canvas>
+               </div>
+            </div>
+         </div>
+         <div id="header"></div>
+         <div id="content"></div>
+         <div id="footer">
+            <div id="score">SCORE: <span>0</span></div>
+            <ul>
+               <li><a href="#" id="refresh"><img src="images/cta-restart.png" alt="" /></a></li>
+               <li><a href="#" id="show-scoreboard"><img src="images/cta-scoreboard.png" alt="" /></a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="scoreboard" title="Login">
+         <table class="striped" id="leaderboard">
+            <thead>
+               <tr>
+                  <th>Leaderboard</th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>

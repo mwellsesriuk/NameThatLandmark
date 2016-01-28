@@ -1,3 +1,5 @@
+//Taken from http://phpjs.org/functions/similar_text/
+
 function similar_text(first, second, percent) {
 
     if (first === null || second === null || typeof first === 'undefined' || typeof second === 'undefined') {

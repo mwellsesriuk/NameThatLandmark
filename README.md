@@ -5,7 +5,7 @@
 Name That Landmark is a game built with the ArcGIS API for JavaScript. The aim of the game is to guess a location from aerial imagery by scratching off a panel obscuring it. The more that is scratched the less a player scores. A player also scores less points the longer they take to name the location.
 
 #Sample
-The sample is build with a world landmark dataset and can be viewed here.
+The sample is build with a world landmark dataset and can be viewed [here](http://apps.esriuk.com/app/ScratchMapGame/4/view/11cc7e9fb5ba456295ef9db727d83647/index.html#).
 
 #Configuring
 Editing the config.json file allows you to specify:

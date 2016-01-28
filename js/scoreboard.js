@@ -1,3 +1,4 @@
+//Function for opening and closing leaderboard
 $(function () {
     $("#scoreboard").dialog({
         minWidth: 500,

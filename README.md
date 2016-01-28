@@ -9,12 +9,12 @@ The sample is build with a world landmark dataset and can be viewed here.
 
 #Configuring
 Editing the config.json file allows you to specify:
-1. Polygon feature service containing location content for the game
-2. Editable point feature service for leaderboard data (must have 'Name' and 'Score' fields)
-3. Field in the polygon feature service that contains the location name
-4. Object ID field in the polygon feature service
-5. Amount of time allowed for each round
-6. Number of rounds
+- Polygon feature service containing location content for the game
+- Editable point feature service for leaderboard data (must have 'Name' and 'Score' fields)
+- Field in the polygon feature service that contains the location name
+- Object ID field in the polygon feature service
+- Amount of time allowed for each round
+- Number of rounds
 
 #Issues
 

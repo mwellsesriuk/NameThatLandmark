@@ -3,13 +3,7 @@ $(function () {
     $("#scoreboard").dialog({
         minWidth: 500,
         autoOpen: false,
-        buttons: [{
-            text: "CLOSE",
-            "class": 'btn red',
-            click: function () {
-                $(this).dialog("close");
-            }
-        }],
+        buttons: [],
         dialogClass: "no-title",
         hide: {
             effect: "scale",

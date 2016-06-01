@@ -249,9 +249,9 @@
                     showAttribution: false
                 });
                 overviewMap = new Map("overview-map", {
-                    basemap: "topo",
+                    basemap: "dark-gray",
                     center: extent.getCenter(),
-                    zoom: 3,
+                    zoom: 5,
                     showAttribution: false
                 });
                 overviewMap.on("load", function () {
@@ -315,6 +315,7 @@
                     $('#pad').css("pointer-events", "auto");
                     $('#countdown').css("display", "block");
                     $('.content-below').css("pointer-events", "auto");
+					$("#answer").focus();
                     count = 3;
                 } else {
                     if (count == 5) {
@@ -413,12 +414,12 @@
                         data: 'f=json&adds=%5B%7B%22geometry%22%3A%7B%22x%22%3A-675091.833814498%2C%22y%22%3A3453730.6860364815%2C%22spatialReference%22%3A%7B%22wkid%22%3A102100%7D%7D%2C%22attributes%22%3A%7B%22Score%22%3A' + totalPoints + '%2C%22Name%22%3A%22' + name + '%22%7D%7D%5D',
                         success: function () {
                             //Update the leaderboard in the app and open it
-                            $("#name").attr('disabled',
-                                'disabled').delay(1000).queue(function () {
-                                    $("#scoreboard").dialog("open");
-                                });;
-                            $("#leaderboard").find("tr:gt(0)").remove();
-                            getLeaderboard(leaderboardUrl);
+                            //$("#name").attr('disabled',
+                            //    'disabled').delay(1000).queue(function () {
+                            //        $("#scoreboard").dialog("open");
+                            //    });;
+                            //$("#leaderboard").find("tr:gt(0)").remove();
+                            //getLeaderboard(leaderboardUrl);
                         }
                     })
                 } else {
